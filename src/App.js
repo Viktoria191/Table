@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     fetchItems(true);
-  }, [searchTerm]);
+  }, [searchTerm, fetchItems]);
 
   const handleScroll = useCallback(() => {
     if (
